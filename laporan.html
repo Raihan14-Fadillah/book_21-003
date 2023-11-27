@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Quarto CRC Book - 1&nbsp; Persiapan</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./laporan.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Persiapan</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Quarto CRC Book</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./laporan.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Persiapan</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#import-file" id="toc-import-file" class="nav-link active" data-scroll-target="#import-file"><span class="header-section-number">1.1</span> Import File</a></li>
+  <li><a href="#import-library" id="toc-import-library" class="nav-link" data-scroll-target="#import-library"><span class="header-section-number">1.2</span> Import Library</a></li>
+  <li><a href="#import-data" id="toc-import-data" class="nav-link" data-scroll-target="#import-data"><span class="header-section-number">1.3</span> Import Data</a></li>
+  <li><a href="#bussiness-understanding" id="toc-bussiness-understanding" class="nav-link" data-scroll-target="#bussiness-understanding"><span class="header-section-number">2</span> Bussiness Understanding</a>
+  <ul class="collapse">
+  <li><a href="#tujuan-proyek" id="toc-tujuan-proyek" class="nav-link" data-scroll-target="#tujuan-proyek"><span class="header-section-number">2.1</span> Tujuan Proyek</a></li>
+  <li><a href="#deskripsi-fitur" id="toc-deskripsi-fitur" class="nav-link" data-scroll-target="#deskripsi-fitur"><span class="header-section-number">2.2</span> Deskripsi Fitur</a></li>
+  </ul></li>
+  <li><a href="#data-understanding" id="toc-data-understanding" class="nav-link" data-scroll-target="#data-understanding"><span class="header-section-number">3</span> Data Understanding</a>
+  <ul class="collapse">
+  <li><a href="#teknik-pengumpulan-data" id="toc-teknik-pengumpulan-data" class="nav-link" data-scroll-target="#teknik-pengumpulan-data"><span class="header-section-number">3.1</span> Teknik Pengumpulan Data</a></li>
+  <li><a href="#deskripsi-fitur-1" id="toc-deskripsi-fitur-1" class="nav-link" data-scroll-target="#deskripsi-fitur-1"><span class="header-section-number">3.2</span> Deskripsi Fitur</a></li>
+  <li><a href="#tipe-data" id="toc-tipe-data" class="nav-link" data-scroll-target="#tipe-data"><span class="header-section-number">3.3</span> Tipe Data</a></li>
+  <li><a href="#identifikasi-missing-value" id="toc-identifikasi-missing-value" class="nav-link" data-scroll-target="#identifikasi-missing-value"><span class="header-section-number">3.4</span> Identifikasi Missing Value</a></li>
+  <li><a href="#visualisasi-data" id="toc-visualisasi-data" class="nav-link" data-scroll-target="#visualisasi-data"><span class="header-section-number">3.5</span> Visualisasi Data</a></li>
+  <li><a href="#identifikasi-outlier" id="toc-identifikasi-outlier" class="nav-link" data-scroll-target="#identifikasi-outlier"><span class="header-section-number">3.6</span> Identifikasi Outlier</a></li>
+  <li><a href="#menentukan-produktivitas-highmediumlow" id="toc-menentukan-produktivitas-highmediumlow" class="nav-link" data-scroll-target="#menentukan-produktivitas-highmediumlow"><span class="header-section-number">3.7</span> Menentukan Produktivitas High/Medium/Low</a></li>
+  <li><a href="#identifikasi-proporsi-jumlah-kelas-data" id="toc-identifikasi-proporsi-jumlah-kelas-data" class="nav-link" data-scroll-target="#identifikasi-proporsi-jumlah-kelas-data"><span class="header-section-number">3.8</span> Identifikasi Proporsi Jumlah Kelas Data</a></li>
+  </ul></li>
+  <li><a href="#preprocessing-data" id="toc-preprocessing-data" class="nav-link" data-scroll-target="#preprocessing-data"><span class="header-section-number">4</span> Preprocessing Data</a>
+  <ul class="collapse">
+  <li><a href="#penanganan-missing-value" id="toc-penanganan-missing-value" class="nav-link" data-scroll-target="#penanganan-missing-value"><span class="header-section-number">4.1</span> Penanganan Missing Value</a></li>
+  <li><a href="#penanganan-pada-outlier" id="toc-penanganan-pada-outlier" class="nav-link" data-scroll-target="#penanganan-pada-outlier"><span class="header-section-number">4.2</span> Penanganan pada outlier</a></li>
+  <li><a href="#merubah-tipe-data-kategorial-ke-numerik" id="toc-merubah-tipe-data-kategorial-ke-numerik" class="nav-link" data-scroll-target="#merubah-tipe-data-kategorial-ke-numerik"><span class="header-section-number">4.3</span> Merubah tipe data Kategorial ke Numerik</a></li>
+  <li><a href="#seleksi-fitur" id="toc-seleksi-fitur" class="nav-link" data-scroll-target="#seleksi-fitur"><span class="header-section-number">4.4</span> Seleksi Fitur</a></li>
+  <li><a href="#balancing" id="toc-balancing" class="nav-link" data-scroll-target="#balancing"><span class="header-section-number">4.5</span> Balancing</a></li>
+  <li><a href="#normalisasi" id="toc-normalisasi" class="nav-link" data-scroll-target="#normalisasi"><span class="header-section-number">4.6</span> Normalisasi</a></li>
+  </ul></li>
+  <li><a href="#modelling" id="toc-modelling" class="nav-link" data-scroll-target="#modelling"><span class="header-section-number">5</span> Modelling</a>
+  <ul class="collapse">
+  <li><a href="#perbandingan-metode" id="toc-perbandingan-metode" class="nav-link" data-scroll-target="#perbandingan-metode"><span class="header-section-number">5.1</span> Perbandingan Metode</a></li>
+  <li><a href="#modelling-1" id="toc-modelling-1" class="nav-link" data-scroll-target="#modelling-1"><span class="header-section-number">5.2</span> Modelling</a>
+  <ul class="collapse">
+  <li><a href="#random-forest" id="toc-random-forest" class="nav-link" data-scroll-target="#random-forest"><span class="header-section-number">5.2.1</span> Random Forest</a></li>
+  <li><a href="#contoh-penerapan" id="toc-contoh-penerapan" class="nav-link" data-scroll-target="#contoh-penerapan"><span class="header-section-number">5.2.2</span> Contoh Penerapan</a></li>
+  <li><a href="#code-modelling" id="toc-code-modelling" class="nav-link" data-scroll-target="#code-modelling"><span class="header-section-number">5.2.3</span> Code Modelling</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#implementasi" id="toc-implementasi" class="nav-link" data-scroll-target="#implementasi"><span class="header-section-number">6</span> Implementasi</a>
+  <ul class="collapse">
+  <li><a href="#prediksi-sebelum-streamlit" id="toc-prediksi-sebelum-streamlit" class="nav-link" data-scroll-target="#prediksi-sebelum-streamlit"><span class="header-section-number">6.1</span> Prediksi (Sebelum Streamlit)</a></li>
+  <li><a href="#implementasi-streamlit" id="toc-implementasi-streamlit" class="nav-link" data-scroll-target="#implementasi-streamlit"><span class="header-section-number">6.2</span> Implementasi Streamlit</a></li>
+  <li><a href="#tampilan-strealit" id="toc-tampilan-strealit" class="nav-link" data-scroll-target="#tampilan-strealit"><span class="header-section-number">6.3</span> Tampilan Strealit</a></li>
+  </ul></li>
+  <li><a href="#evaluasi" id="toc-evaluasi" class="nav-link" data-scroll-target="#evaluasi"><span class="header-section-number">7</span> Evaluasi</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Persiapan</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>============================================= LAPORAN PROYEK SAINS DATA ==========================================</p>
+<ul>
+<li>Nama : Raihan Fadillah</li>
+<li>Nim : 210411100003</li>
+<li>Kelas : Proyek Sains Data</li>
+</ul>
+<section id="import-file" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="import-file"><span class="header-section-number">1.1</span> Import File</h2>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700042217402,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:20153,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="d17d6977-7f91-4611-bb20-2c6886522726" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> drive</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>drive.mount(<span class="st">'/content/drive'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>cd <span class="op">/</span>content<span class="op">/</span>drive<span class="op">/</span>MyDrive<span class="op">/</span>PSD_SMSTR_5<span class="op">/</span>Project2<span class="op">-</span><span class="dv">1</span><span class="op">/</span>laporan</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mounted at /content/drive
+/content/drive/MyDrive/PSD_SMSTR_5/Project2-1/laporan</code></pre>
+</div>
+</div>
+</section>
+<section id="import-library" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="import-library"><span class="header-section-number">1.2</span> Import Library</h2>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700042525317,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:603,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, Math</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy <span class="im">import</span> symbols, Eq</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> LabelEncoder</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_selection <span class="im">import</span> SelectKBest</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_selection <span class="im">import</span> chi2</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.utils <span class="im">import</span> resample</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> MinMaxScaler</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pickle</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score, recall_score, precision_score, f1_score, classification_report</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeClassifier</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> SVC</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsClassifier</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="import-data" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="import-data"><span class="header-section-number">1.3</span> Import Data</h2>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044777760,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:627,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="a18c3e4a-d25c-46bc-f2b0-9af4e9effdb7" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_review <span class="op">=</span> pd.read_csv (<span class="st">'garmen.csv'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_review.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+
+  <div id="df-388c9a4e-f26f-411b-8caa-c0db023f5b0f" class="colab-df-container">
+    <div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th">quarter</th>
+<th data-quarto-table-cell-role="th">department</th>
+<th data-quarto-table-cell-role="th">day</th>
+<th data-quarto-table-cell-role="th">team</th>
+<th data-quarto-table-cell-role="th">targeted_productivity</th>
+<th data-quarto-table-cell-role="th">smv</th>
+<th data-quarto-table-cell-role="th">wip</th>
+<th data-quarto-table-cell-role="th">over_time</th>
+<th data-quarto-table-cell-role="th">incentive</th>
+<th data-quarto-table-cell-role="th">idle_time</th>
+<th data-quarto-table-cell-role="th">idle_men</th>
+<th data-quarto-table-cell-role="th">no_of_style_change</th>
+<th data-quarto-table-cell-role="th">no_of_workers</th>
+<th data-quarto-table-cell-role="th">actual_productivity</th>
+<th data-quarto-table-cell-role="th">Label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1/1/2015</td>
+<td>Quarter1</td>
+<td>sweing</td>
+<td>Thursday</td>
+<td>8</td>
+<td>0.80</td>
+<td>26.16</td>
+<td>1108.0</td>
+<td>7080</td>
+<td>98</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>59.0</td>
+<td>0.940725</td>
+<td>High</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1/1/2015</td>
+<td>Quarter1</td>
+<td>finishing</td>
+<td>Thursday</td>
+<td>1</td>
+<td>0.75</td>
+<td>3.94</td>
+<td>NaN</td>
+<td>960</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>8.0</td>
+<td>0.886500</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1/1/2015</td>
+<td>Quarter1</td>
+<td>sweing</td>
+<td>Thursday</td>
+<td>11</td>
+<td>0.80</td>
+<td>11.41</td>
+<td>968.0</td>
+<td>3660</td>
+<td>50</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>30.5</td>
+<td>0.800570</td>
+<td>High</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1/1/2015</td>
+<td>Quarter1</td>
+<td>sweing</td>
+<td>Thursday</td>
+<td>12</td>
+<td>0.80</td>
+<td>11.41</td>
+<td>968.0</td>
+<td>3660</td>
+<td>50</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>30.5</td>
+<td>0.800570</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>1/1/2015</td>
+<td>Quarter1</td>
+<td>sweing</td>
+<td>Thursday</td>
+<td>6</td>
+<td>0.80</td>
+<td>25.90</td>
+<td>1170.0</td>
+<td>1920</td>
+<td>50</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>56.0</td>
+<td>0.800382</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-388c9a4e-f26f-411b-8caa-c0db023f5b0f')" title="Convert this dataframe to an interactive table." style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-388c9a4e-f26f-411b-8caa-c0db023f5b0f button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-388c9a4e-f26f-411b-8caa-c0db023f5b0f');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-223a13d7-1aa4-4052-91ae-9d88e23c56c6">
+  <button class="colab-df-quickchart" onclick="quickchart('df-223a13d7-1aa4-4052-91ae-9d88e23c56c6')" title="Suggest charts" style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-223a13d7-1aa4-4052-91ae-9d88e23c56c6 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section id="bussiness-understanding" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Bussiness Understanding</h1>
+<section id="tujuan-proyek" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="tujuan-proyek"><span class="header-section-number">2.1</span> Tujuan Proyek</h2>
+<p>Memprediksi atau mengukur produktivitas karyawan di industri garmen dengan menggunakan model prediksi. Tingkat produktivitas karyawan atau tim pada suatu hari atau periode tertentu dapat diperkirakan sebagai berikut:</p>
+<ul>
+<li>Produktivitas lebih rendah atau sama dengan 0.5 maka dikategorikan sebagai “low”</li>
+<li>Produktivitas di atas 0.5 dan kurang dari 0.8 dikategorikan sebagai “medium”</li>
+<li>Produktivitas 0.8 atau lebih dikategorikan sebagai “high”</li>
+</ul>
+<p>Tujuan lainnya adalah mengidentifikasi faktor-faktor yang paling memengaruhi produktivitas karyawan. Ini dapat mencakup variabel seperti jumlah pekerja, waktu kerja tambahan (overtime), insentif, dan lainnya.</p>
+</section>
+<section id="deskripsi-fitur" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="deskripsi-fitur"><span class="header-section-number">2.2</span> Deskripsi Fitur</h2>
+<ul>
+<li>date (Tanggal dalam format MM-DD-YYYY)</li>
+<li>day (Hari dalam seminggu)</li>
+<li>quarter (Sebagian dari bulan. Sebulan dibagi menjadi empat kuarter)</li>
+<li>department (Departemen yang terkait dengan instance)</li>
+<li>team_no (Nomor tim yang terkait dengan instance)</li>
+<li>no_of_workers (Jumlah pekerja dalam setiap tim)</li>
+<li>no_of_style_change (Jumlah perubahan gaya pada produk tertentu)</li>
+<li>targeted_productivity (Produktivitas yang ditargetkan oleh Otoritas untuk setiap tim setiap hari)</li>
+<li>smv (Standard Minute Value, yaitu waktu yang dialokasikan untuk suatu tugas)</li>
+<li>wip (Work in progress. Termasuk jumlah item yang belum selesai untuk produk)</li>
+<li>over_time (Mewakili jumlah lembur oleh setiap tim dalam menit)</li>
+<li>incentive (Mewakili jumlah insentif finansial (dalam BDT) yang memungkinkan atau memotivasi suatu tindakan tertentu)</li>
+<li>idle_time (Jumlah waktu ketika produksi terganggu karena beberapa alasan)</li>
+<li>idle_men (Jumlah pekerja yang menganggur karena gangguan produksi)</li>
+<li>actual_productivity (Persentase produktivitas aktual yang disampaikan oleh pekerja. Berkisar dari 0-1)</li>
+</ul>
+</section>
+</section>
+<section id="data-understanding" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Data Understanding</h1>
+<section id="teknik-pengumpulan-data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="teknik-pengumpulan-data"><span class="header-section-number">3.1</span> Teknik Pengumpulan Data</h2>
+<p>Studi ini akan membahas produktivitas karyawan di industri garmen. Data dikumpulkan dari berbagai perusahaan garmen dan mencakup berbagai aspek seperti jumlah pekerja, waktu kerja tambahan (overtime), insentif, dan lainnya. Setiap entri menunjukkan tingkat produktivitas pada hari tertentu dan database akhir diekspor ke dalam satu lembar (.csv).</p>
+<p>Jumlah Dataset sebanyak 1197 dengan rincian sebagai berikut: - Produktivitas tinggi (“High”) = 798 data - Produktivitas sedang (“Medium”) = 266 data - Produktivitas rendah (“Low”) = 133 data</p>
+<p>Pertanyaan yang perlu diteliti lebih lanjut meliputi: - Apakah terdapat Missing Values pada data? - Apakah terdapat Outlier pada data? - Apakah proporsi dari setiap kelas pada data sudah seimbang atau inbalancing?</p>
+</section>
+<section id="deskripsi-fitur-1" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="deskripsi-fitur-1"><span class="header-section-number">3.2</span> Deskripsi Fitur</h2>
+<ul>
+<li><strong>date (Tanggal dalam format MM-DD-YYYY)</strong>: Tanggal pengumpulan data.</li>
+<li><strong>day (Hari dalam seminggu)</strong>: Hari dalam seminggu ketika data dikumpulkan.</li>
+<li><strong>quarter (Sebagian dari bulan)</strong>: Sebulan dibagi menjadi empat kuarter.</li>
+<li><strong>department (Departemen yang terkait dengan instance)</strong>: Departemen tempat data dikumpulkan.</li>
+<li><strong>team_no (Nomor tim yang terkait dengan instance)</strong>: Nomor tim yang terlibat dalam pengumpulan data.</li>
+<li><strong>no_of_workers (Jumlah pekerja dalam setiap tim)</strong>: Jumlah pekerja dalam tim yang terlibat dalam pengumpulan data.</li>
+<li><strong>no_of_style_change (Jumlah perubahan gaya pada produk tertentu)</strong>: Jumlah perubahan gaya yang dilakukan pada produk selama periode pengumpulan data.</li>
+<li><strong>targeted_productivity (Produktivitas yang ditargetkan oleh Otoritas untuk setiap tim setiap hari)</strong>: Target produktivitas yang ditetapkan oleh manajemen untuk setiap tim setiap hari.</li>
+<li><strong>smv (Standard Minute Value, yaitu waktu yang dialokasikan untuk suatu tugas)</strong>: Waktu standar yang dialokasikan untuk menyelesaikan suatu tugas.</li>
+<li><strong>wip (Work in progress)</strong>: Jumlah item yang belum selesai untuk produk.</li>
+<li><strong>over_time (Mewakili jumlah lembur oleh setiap tim dalam menit)</strong>: Jumlah waktu lembur yang dilakukan oleh setiap tim dalam menit.</li>
+<li><strong>incentive (Mewakili jumlah insentif finansial (dalam BDT) yang memungkinkan atau memotivasi suatu tindakan tertentu)</strong>: Jumlah insentif finansial yang diberikan kepada pekerja.</li>
+<li><strong>idle_time (Jumlah waktu ketika produksi terganggu karena beberapa alasan)</strong>: Jumlah waktu ketika produksi terhenti karena beberapa alasan.</li>
+<li><strong>idle_men (Jumlah pekerja yang menganggur karena gangguan produksi)</strong>: Jumlah pekerja yang tidak bekerja karena gangguan produksi.</li>
+<li><strong>actual_productivity (Persentase produktivitas aktual yang disampaikan oleh pekerja. Berkisar dari 0-1)</strong>: Tingkat produktivitas aktual yang dicapai oleh pekerja. Nilai ini berkisar dari 0 hingga 1.</li>
+</ul>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044793877,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:850,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="3306a2c0-919b-4a73-c13b-073e86b23e2a" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_review.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 1197 entries, 0 to 1196
+Data columns (total 16 columns):
+ #   Column                 Non-Null Count  Dtype  
+---  ------                 --------------  -----  
+ 0   date                   1197 non-null   object 
+ 1   quarter                1197 non-null   object 
+ 2   department             1197 non-null   object 
+ 3   day                    1197 non-null   object 
+ 4   team                   1197 non-null   int64  
+ 5   targeted_productivity  1197 non-null   float64
+ 6   smv                    1197 non-null   float64
+ 7   wip                    691 non-null    float64
+ 8   over_time              1197 non-null   int64  
+ 9   incentive              1197 non-null   int64  
+ 10  idle_time              1197 non-null   float64
+ 11  idle_men               1197 non-null   int64  
+ 12  no_of_style_change     1197 non-null   int64  
+ 13  no_of_workers          1197 non-null   float64
+ 14  actual_productivity    1197 non-null   float64
+ 15  Label                  1197 non-null   object 
+dtypes: float64(6), int64(5), object(5)
+memory usage: 149.8+ KB</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044796928,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:3,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="15a83c33-a5a7-4075-da6d-d8b0dcc19590" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_review.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>Index(['date', 'quarter', 'department', 'day', 'team', 'targeted_productivity',
+       'smv', 'wip', 'over_time', 'incentive', 'idle_time', 'idle_men',
+       'no_of_style_change', 'no_of_workers', 'actual_productivity', 'Label'],
+      dtype='object')</code></pre>
+</div>
+</div>
+</section>
+<section id="tipe-data" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="tipe-data"><span class="header-section-number">3.3</span> Tipe Data</h2>
+<p>Terdapat beberapa Tipe Data yang terdapat didalam dataset, diantaranya - Tipe Data Rasio</p>
+<blockquote class="blockquote">
+<ul>
+<li>date</li>
+<li>quarter</li>
+<li>team_no</li>
+<li>no_of_workers</li>
+<li>no_of_style_change</li>
+<li>targeted_productivity</li>
+<li>smv</li>
+<li>wip</li>
+<li>over_time</li>
+<li>incentive</li>
+<li>idle_time</li>
+<li>idle_men</li>
+</ul>
+</blockquote>
+<ul>
+<li>Tipe Data Interval &gt; - day &gt; - department &gt; - actual_productivity</li>
+</ul>
+<p>Banyak data dalam masing-masing kelasnya</p>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044802342,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:7,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="a544a4b8-9eea-44ca-b284-a42d2906cf7d" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_review[<span class="st">'actual_productivity'</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>array([0.94072542, 0.8865    , 0.80057049, 0.80038194, 0.800125  ,
+       0.75516667, 0.75368348, 0.75309753, 0.75042783, 0.72112696,
+       0.71220525, 0.7070459 , 0.70591667, 0.67666667, 0.59305556,
+       0.54072917, 0.52118   , 0.43632639, 0.98802469, 0.98788044,
+       0.95627083, 0.94527778, 0.90291667, 0.80072531, 0.80032294,
+       0.80031864, 0.80023729, 0.80014865, 0.78729969, 0.78244792,
+       0.75024303, 0.7018125 , 0.70013404, 0.69996522, 0.62833333,
+       0.6253125 , 0.99138889, 0.93164583, 0.91522917, 0.87971448,
+       0.86167901, 0.85056949, 0.85043644, 0.85034513, 0.80059806,
+       0.80023784, 0.8000302 , 0.79210417, 0.75922839, 0.75034846,
+       0.68270833, 0.66760417, 0.60343218, 0.34583333, 0.96105903,
+       0.93951389, 0.89366319, 0.87539062, 0.82083333, 0.80441667,
+       0.80068437, 0.80025096, 0.80024601, 0.80007652, 0.763375  ,
+       0.75927083, 0.7504    , 0.66458333, 0.60002874, 0.96678135,
+       0.93649621, 0.89916667, 0.88868687, 0.85814394, 0.85050231,
+       0.80964015, 0.80590909, 0.80059447, 0.80027383, 0.80014097,
+       0.80012872, 0.80007657, 0.75054546, 0.75005785, 0.68106061,
+       0.64998328, 0.61625   , 0.95142046, 0.8805303 , 0.85013677,
+       0.83      , 0.82718654, 0.81337121, 0.80464015, 0.80034377,
+       0.80024675, 0.8       , 0.70048083, 0.66651515, 0.41211983,
+       0.33011364, 0.94768939, 0.9199054 , 0.90021572, 0.89172348,
+       0.85018182, 0.83575758, 0.82135417, 0.80049725, 0.80010714,
+       0.80002493, 0.77979167, 0.73598485, 0.71262626, 0.51560606,
+       0.34995139, 0.23370548, 0.985     , 0.93034038, 0.91158974,
+       0.85117411, 0.84695076, 0.81742424, 0.81710227, 0.80102821,
+       0.80034644, 0.8001171 , 0.75009835, 0.67324528, 0.67007576,
+       0.62888258, 0.38800781, 0.33797349, 0.93532197, 0.92564394,
+       0.87306818, 0.82829546, 0.69018282, 0.66808712, 0.65359848,
+       0.60913826, 0.60022985, 0.59734849, 0.59043561, 0.4731348 ,
+       0.45297963, 0.95515151, 0.9422138 , 0.90545454, 0.85052217,
+       0.80956439, 0.80018182, 0.725     , 0.68855756, 0.65004078,
+       0.64998056, 0.64810606, 0.64057765, 0.35063299, 0.24625   ,
+       0.9520202 , 0.91276667, 0.90126263, 0.85025253, 0.70557658,
+       0.60127841, 0.58230103, 0.52681035, 0.5003808 , 0.35020649,
+       0.93460744, 0.90808081, 0.90014481, 0.86458333, 0.8375947 ,
+       0.80031343, 0.70009556, 0.66732954, 0.60036969, 0.49998033,
+       0.35003125, 0.33235931, 0.31120746, 0.24731602, 0.98863636,
+       0.95311005, 0.88426136, 0.86065341, 0.85041563, 0.80003139,
+       0.70006035, 0.68929924, 0.66068329, 0.65013095, 0.60691288,
+       0.60029177, 0.50002507, 0.49999889, 0.98719697, 0.98090909,
+       0.97462121, 0.82680303, 0.77011398, 0.7005417 , 0.67556818,
+       0.66183712, 0.65019865, 0.60027327, 0.46575758, 0.45201254,
+       0.31385281, 0.85279356, 0.83838384, 0.80484848, 0.80001501,
+       0.70009416, 0.69204546, 0.66225589, 0.65041673, 0.65029958,
+       0.6502435 , 0.63986742, 0.6000627 , 0.58204546, 0.40324216,
+       0.23579545, 0.97727273, 0.96410606, 0.95890151, 0.80035877,
+       0.8001626 , 0.7938447 , 0.75051756, 0.75006805, 0.75006275,
+       0.75005736, 0.70017039, 0.68380682, 0.65006644, 0.57646039,
+       0.54996943, 0.53839962, 0.40954546, 0.35021836, 1.03357008,
+       0.80026149, 0.75003797, 0.7500319 , 0.72830303, 0.7000638 ,
+       0.50029042, 0.40033279, 0.36266667, 0.97852564, 0.91220211,
+       0.90055628, 0.85041051, 0.82714744, 0.80043654, 0.80041574,
+       0.80002056, 0.75817308, 0.75034483, 0.70002977, 0.60017284,
+       0.59487179, 0.52023765, 0.5051282 , 0.50024134, 0.47076923,
+       0.95763889, 0.94070106, 0.84998377, 0.80030279, 0.80019199,
+       0.75016237, 0.74290124, 0.70025078, 0.67021605, 0.64966222,
+       0.62682292, 0.60043643, 0.60041361, 0.55550013, 0.50054754,
+       0.4605787 , 0.39774306, 0.32740741, 0.96666667, 0.93724242,
+       0.91052189, 0.90064806, 0.90032111, 0.89602273, 0.89545454,
+       0.87058081, 0.85858586, 0.80064381, 0.80062987, 0.80053714,
+       0.80035194, 0.75007932, 0.7500412 , 0.65151515, 0.60012522,
+       0.57831439, 0.34998951, 0.26117424, 0.97379679, 0.97007576,
+       0.96178451, 0.85022378, 0.80090961, 0.80051331, 0.80038636,
+       0.74918831, 0.70043672, 0.65040752, 0.61818182, 0.59114168,
+       0.50006192, 0.32954545, 1.05962121, 0.99779221, 0.96369949,
+       0.95919192, 0.91037879, 0.85031268, 0.80003402, 0.80002351,
+       0.76929293, 0.75003145, 0.70061442, 0.64630682, 0.60014336,
+       0.35006699, 1.00023041, 0.97952778, 0.940625  , 0.92638889,
+       0.90012976, 0.861875  , 0.84545833, 0.82355556, 0.80354167,
+       0.80026322, 0.788     , 0.77815   , 0.70038621, 0.70016471,
+       0.65030714, 0.62282812, 0.6225    , 0.50003535, 0.37046657,
+       0.97755556, 0.9456    , 0.90222222, 0.85053214, 0.85036207,
+       0.84053333, 0.80053448, 0.80048968, 0.75555556, 0.7505931 ,
+       0.75028333, 0.72263889, 0.55333333, 0.50056731, 0.46769327,
+       0.43799534, 0.40635417, 0.28533333, 0.259375  , 0.989     ,
+       0.95018596, 0.9008    , 0.899     , 0.87755208, 0.85695   ,
+       0.85366667, 0.85017011, 0.80047373, 0.77333333, 0.75064667,
+       0.63466667, 0.60059761, 0.50011768, 0.4925    , 0.48792   ,
+       1.00045747, 0.97186667, 0.9202369 , 0.90053707, 0.85061053,
+       0.65676374, 0.65014815, 0.60071061, 0.38883036, 0.28698457,
+       1.0115625 , 1.0006713 , 1.00040205, 0.9504386 , 0.89219444,
+       0.85011396, 0.84506944, 0.75045066, 0.70266667, 0.70050893,
+       0.65100707, 0.46682121, 0.41155357, 0.31416667, 1.00060228,
+       0.99427083, 0.9001584 , 0.90014152, 0.80923611, 0.80040196,
+       0.80039322, 0.79996322, 0.74044444, 0.70039815, 0.70035455,
+       0.56197917, 0.50459649, 0.50080172, 0.29530774, 0.28033333,
+       0.26097879, 1.00141667, 1.00001855, 0.99999524, 0.99485   ,
+       0.97697917, 0.94998161, 0.91995454, 0.80043462, 0.80025902,
+       0.77822222, 0.70051357, 0.70018458, 0.58646546, 0.54151786,
+       0.5375    , 0.49541667, 0.41517241, 1.05028058, 0.96675926,
+       0.92918333, 0.91576667, 0.90014725, 0.70071042, 0.70061207,
+       0.70027885, 0.70013509, 0.68755556, 0.65083481, 0.53166667,
+       0.35070642, 1.00044602, 0.99992424, 0.9425    , 0.90666667,
+       0.8471    , 0.80061268, 0.77158333, 0.70007903, 0.56221264,
+       0.52284483, 0.50072013, 0.49654971, 1.05066667, 0.90013569,
+       0.89911111, 0.87008333, 0.84583333, 0.75052012, 0.75002778,
+       0.71576667, 0.66227011, 0.60022419, 0.54565767, 0.44791667,
+       0.36531871, 0.92868056, 0.89306667, 0.89155556, 0.87555556,
+       0.84088889, 0.80035521, 0.75065101, 0.70061823, 0.61020833,
+       0.60741667, 0.56825959, 0.35553448, 0.35325965, 1.05796296,
+       0.96201667, 0.90050904, 0.90047782, 0.888125  , 0.80016117,
+       0.79000324, 0.75064815, 0.70711111, 0.69770833, 0.61251716,
+       0.35030172, 0.272     , 1.00488889, 0.90063244, 0.90047076,
+       0.89998406, 0.8008    , 0.79675556, 0.75079701, 0.75035613,
+       0.70377083, 0.6895    , 0.39354885, 1.03315556, 1.02      ,
+       1.00034493, 1.00006579, 0.994375  , 0.91203704, 0.87      ,
+       0.85036458, 0.80094747, 0.80014414, 0.75040623, 0.71441049,
+       0.70058841, 0.61836111, 0.60007051, 0.54175   , 0.53690175,
+       0.50790323, 1.10048392, 1.09663333, 0.83866667, 0.75548611,
+       0.75079944, 0.68801768, 0.664875  , 0.65666667, 0.63771186,
+       0.60194444, 0.58      , 0.53567797, 0.50012336, 0.49788506,
+       0.46340395, 0.441392  , 0.92927778, 0.80088889, 0.80037492,
+       0.79620833, 0.75039216, 0.725625  , 0.70020613, 0.602     ,
+       0.60044751, 0.55725245, 0.48333333, 0.23804167, 1.1204375 ,
+       1.108125  , 0.87644444, 0.80080631, 0.76083333, 0.72256863,
+       0.71533333, 0.70063277, 0.7005731 , 0.68159804, 0.65022372,
+       0.60520833, 0.60416667, 0.59862745, 0.47571839, 0.4321229 ,
+       0.28704167, 0.28305449, 0.96043333, 0.80224332, 0.80098039,
+       0.80031237, 0.72233333, 0.70045989, 0.62941667, 0.62197175,
+       0.56597222, 0.35542803, 0.32996488, 0.258     , 0.92754167,
+       0.91375   , 0.9025    , 0.7866    , 0.75062135, 0.74916667,
+       0.7008882 , 0.70061403, 0.70060345, 0.65343137, 0.650134  ,
+       0.60098291, 0.58604167, 0.5814    , 0.36107143, 0.30211735,
+       0.9918    , 0.93686111, 0.919125  , 0.8211125 , 0.80027969,
+       0.75053268, 0.73464583, 0.70009573, 0.671875  , 0.64025   ,
+       0.54979167, 0.32813158, 0.30357447, 0.2565    , 0.25139925,
+       0.81640625, 0.80071149, 0.80047051, 0.80009402, 0.79998285,
+       0.7858642 , 0.73327778, 0.710125  , 0.70054044, 0.7       ,
+       0.68402778, 0.67213542, 0.63861438, 0.63135417, 0.61114054,
+       0.60958333, 0.58531579, 0.24941667, 0.8721    , 0.8319375 ,
+       0.8300625 , 0.80555556, 0.80000295, 0.78375   , 0.753525  ,
+       0.72734954, 0.70060526, 0.6721408 , 0.62701118, 0.62657778,
+       0.456875  , 0.38579167, 0.30750146, 0.28395833, 0.95579167,
+       0.93041667, 0.87115   , 0.80013725, 0.75077012, 0.75029394,
+       0.700623  , 0.70036207, 0.60128   , 0.41791667, 0.3715625 ,
+       0.36871875, 0.35645833, 0.81138889, 0.80007184, 0.79145833,
+       0.75072733, 0.75043727, 0.75017699, 0.72693333, 0.70051852,
+       0.7002568 , 0.5046875 , 0.47110849, 0.325     , 0.26821429,
+       0.97081667, 0.90296296, 0.90083333, 0.89955556, 0.80080864,
+       0.80011582, 0.75050357, 0.7502069 , 0.70006981, 0.70005833,
+       0.65854167, 0.59879234, 0.58113095, 0.440375  , 0.41083333,
+       0.9217037 , 0.92160494, 0.80051667, 0.76884722, 0.75047368,
+       0.7503719 , 0.70025177, 0.66237931, 0.59061728, 0.5565625 ,
+       0.49561751, 0.44996491, 0.4078125 , 0.37889515, 0.37659722,
+       0.271875  , 0.80077902, 0.80026082, 0.75071698, 0.75042593,
+       0.75039551, 0.7002366 , 0.70021111, 0.55040351, 0.55034971,
+       0.50025805, 0.93635556, 0.81361111, 0.75075   , 0.70744643,
+       0.70001988, 0.68355061, 0.68243304, 0.67308333, 0.60023977,
+       0.585     , 0.57951149, 0.44872222, 0.44708333, 0.35041667,
+       0.92885   , 0.86037037, 0.80687917, 0.80057953, 0.8004    ,
+       0.80030921, 0.80014981, 0.75025487, 0.70090357, 0.70013604,
+       0.63236111, 0.60765432, 0.53791944, 0.34236111, 0.99953333,
+       0.80070175, 0.80056609, 0.80033333, 0.75021255, 0.70277778,
+       0.70065965, 0.69998442, 0.63604938, 0.56737778, 0.55543056,
+       0.46319444, 0.35444444, 0.30933333, 0.30277037, 0.93916667,
+       0.88592593, 0.83375   , 0.80605833, 0.80005576, 0.79997586,
+       0.75065172, 0.70042414, 0.68488889, 0.59208333, 0.5403125 ,
+       0.43326316, 0.40414493, 0.33214647, 0.98098485, 0.950625  ,
+       0.92729167, 0.86888889, 0.812625  , 0.81011111, 0.80053498,
+       0.75005085, 0.700422  , 0.60009914, 0.453125  , 0.36605352,
+       0.26369382, 0.85052059, 0.850045  , 0.82544444, 0.80575   ,
+       0.80074655, 0.80057895, 0.8000345 , 0.7975    , 0.74998712,
+       0.65708333, 0.65024031, 0.59074074, 0.528125  , 0.50052809,
+       0.40896035, 0.95194444, 0.94555556, 0.92907407, 0.89060417,
+       0.884     , 0.85791667, 0.85008421, 0.85007069, 0.80051107,
+       0.75520833, 0.70010606, 0.60103709, 0.60052857, 0.5000339 ,
+       0.4509375 , 0.44104167, 0.960625  , 0.86434259, 0.85044615,
+       0.85042689, 0.841     , 0.80084242, 0.79541667, 0.7953875 ,
+       0.79456667, 0.70051622, 0.6825    , 0.65096228, 0.65042143,
+       0.60004068, 0.50061091, 0.47729167, 0.2640625 , 0.92      ,
+       0.90939167, 0.90006102, 0.89444444, 0.881575  , 0.88075417,
+       0.82166667, 0.75822917, 0.750608  , 0.741     , 0.70050526,
+       0.70024649, 0.70005185, 0.65004407, 0.63040292, 0.560625  ,
+       0.39875   , 0.92283951, 0.87402778, 0.81927083, 0.81330903,
+       0.78663194, 0.75885   , 0.75034733, 0.75014074, 0.7005569 ,
+       0.65059649, 0.625625  , 0.50588889, 0.39472222])</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044809296,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:830,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="7e2ace56-a566-44c7-a421-563687062a68" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df_review.actual_productivity.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>0.800402    24
+0.971867    12
+0.850137    12
+0.750651    11
+0.850502    11
+            ..
+0.800034     1
+0.800024     1
+0.769293     1
+0.750031     1
+0.394722     1
+Name: actual_productivity, Length: 879, dtype: int64</code></pre>
+</div>
+</div>
+</section>
+<section id="identifikasi-missing-value" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="identifikasi-missing-value"><span class="header-section-number">3.4</span> Identifikasi Missing Value</h2>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044814083,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:391,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="c93f2c25-6bc4-4b02-d8a2-75dbd060c18a" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df_review.isnull().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>date                       0
+quarter                    0
+department                 0
+day                        0
+team                       0
+targeted_productivity      0
+smv                        0
+wip                      506
+over_time                  0
+incentive                  0
+idle_time                  0
+idle_men                   0
+no_of_style_change         0
+no_of_workers              0
+actual_productivity        0
+Label                      0
+dtype: int64</code></pre>
+</div>
+</div>
+</section>
+<section id="visualisasi-data" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="visualisasi-data"><span class="header-section-number">3.5</span> Visualisasi Data</h2>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044821270,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:3633,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="972fbb8d-ef43-4a64-9bd2-1a868bff5a79" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#distribution data</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>df_review.hist(figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">14</span>))</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="laporan_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="identifikasi-outlier" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="identifikasi-outlier"><span class="header-section-number">3.6</span> Identifikasi Outlier</h2>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044826385,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:7,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="2ce1034c-dbbb-4f85-c897-46792db8dde4" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> detect_outliers_zscore(data, threshold<span class="op">=</span><span class="dv">3</span>):</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    numerical_data <span class="op">=</span> data.select_dtypes(include<span class="op">=</span>[np.number])</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    z_scores <span class="op">=</span> np.<span class="bu">abs</span>(stats.zscore(numerical_data))</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    outliers <span class="op">=</span> np.where(z_scores <span class="op">&gt;</span> threshold)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> outliers[<span class="dv">0</span>]</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>outliers <span class="op">=</span> detect_outliers_zscore(df_review)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Outliers:"</span>, <span class="bu">len</span>(outliers))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Outliers: 107</code></pre>
+</div>
+</div>
+</section>
+<section id="menentukan-produktivitas-highmediumlow" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="menentukan-produktivitas-highmediumlow"><span class="header-section-number">3.7</span> Menentukan Produktivitas High/Medium/Low</h2>
+<p>Terdapat Tips untuk menangani masalah regresi maka dapat menetapkan batas produktivitas karyawan dimana, jika:</p>
+<ul>
+<li>Produktivitas karyawan lebih besar sama dengan 0.8 maka dinyatakan “high”</li>
+<li>Produktivitas karyawan di atas 0.5 dan kurang dari 0.8 maka dinyatakan “medium”</li>
+<li>Produktivitas karyawan lebih rendah atau sama dengan 0.5 maka dinyatakan “low”</li>
+</ul>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044830814,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:536,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garments_worker_productivity.csv"</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> label_productivity(row):</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> row[<span class="st">'actual_productivity'</span>] <span class="op">&lt;</span> <span class="fl">0.5</span>:</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">'Low'</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> <span class="fl">0.7</span> <span class="op">&lt;=</span> row[<span class="st">'actual_productivity'</span>] <span class="op">&lt;</span> <span class="fl">0.8</span>:</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">'Medium'</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">'High'</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> data[<span class="st">'Label'</span>] <span class="op">=</span> data.<span class="bu">apply</span>(label_productivity, axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="identifikasi-proporsi-jumlah-kelas-data" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="identifikasi-proporsi-jumlah-kelas-data"><span class="header-section-number">3.8</span> Identifikasi Proporsi Jumlah Kelas Data</h2>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044833764,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:3,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="2bb41cd9-0fc1-4532-e08c-c73362cba9bf" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>target.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>High      798
+Medium    266
+Low       133
+dtype: int64</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="preprocessing-data" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Preprocessing Data</h1>
+<hr>
+<p>Dari Data Understanding diatas dapat disimpulkan bahwasannya: - Didalam data memiliki Missing Values - Didalam data juga terdapat outlier yang terdeteksi - Terdapat Fitur dengan tipe categorial yang harus diganti ke numerik - Beberapa fitur tidak terlalu penting - Terjadi Inbalancing pada data - fitur-fitur dalam dataset memiliki skala yang berbeda-beda</p>
+<p>Maka dari itu perlu dilakukan beberapa langkah preprocessing pada data seperti: - Penanganan Missing Value - Penanganan pada Outlier - Merubah fitur tipe categorial ke numerik - Melakukan seleksi fitur - Balancing Data agar jumlah kelas pada data menjadi seimbang</p>
+<section id="penanganan-missing-value" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="penanganan-missing-value"><span class="header-section-number">4.1</span> Penanganan Missing Value</h2>
+<ol type="1">
+<li>Membaca Data: Data dibaca dari file CSV dan dimuat ke dalam DataFrame data.</li>
+<li>Grouping dan Menghitung Rata-Rata: Data dikelompokkan berdasarkan kolom ‘Label’ menggunakan groupby(). Rata-rata untuk setiap kelompok dihitung dengan mean().</li>
+<li>Penanganan Missing Value: Nilai-nilai yang hilang diisi dengan nilai rata-rata dari kelompok yang sesuai menggunakan: data = data.apply(lambda row: row.fillna(mean_values.loc[row[’Label’]]), axis=1)</li>
+<li>Menyimpan Data yang Diperbarui: DataFrame yang sudah diperbarui disimpan ke dalam file CSV baru “garmenMis.csv” tanpa menyertakan indeks DataFrame.</li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044839600,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:1229,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="c82efa84-8493-4b07-c44d-306c86639ca4" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmen.csv"</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>grouped_data <span class="op">=</span> data.groupby(<span class="st">'Label'</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>mean_values <span class="op">=</span> grouped_data.mean()</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.<span class="bu">apply</span>(<span class="kw">lambda</span> row: row.fillna(mean_values.loc[row[<span class="st">'Label'</span>]]), axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>data.to_csv(<span class="st">"garmenMis.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>FutureWarning: The default value of numeric_only in DataFrameGroupBy.mean is deprecated. In a future version, numeric_only will default to False. Either specify numeric_only or select only columns which should be valid for the function.
+  mean_values = grouped_data.mean()</code></pre>
+</div>
+</div>
+</section>
+<section id="penanganan-pada-outlier" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="penanganan-pada-outlier"><span class="header-section-number">4.2</span> Penanganan pada outlier</h2>
+<ol type="1">
+<li>Pemisahan Fitur Numerik dan Kategorikal: &gt; - numerical_data: Fitur-fitur numerik dipilih menggunakan select_dtypes. &gt; - categorical_data: Fitur-fitur kategorikal dipilih menggunakan select_dtypes.</li>
+<li>Perhitungan Z-Score: Z-scores dihitung untuk setiap elemen dalam numerical_data menggunakan rumus: <span class="math display">\[Z = \frac{X - \mu}{\sigma}\]</span> μ adalah rata-rata dan σ adalah deviasi standar.</li>
+<li>Identifikasi Outlier: Outlier diidentifikasi dengan mengevaluasi apakah setidaknya satu nilai dalam setiap baris melebihi batas ambang (threshold).</li>
+<li>Penghapusan Outlier: Baris-baris yang mengandung outlier dihapus menggunakan bitwise negation.</li>
+<li>Output Hasil: DataFrame yang sudah dihapus outlier dikembalikan sebagai hasil dari fungsi.</li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044844229,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:7,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="b6de4a0a-d6ff-4164-a42c-e4d676135f5b" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> remove_outliers_zscore(data, threshold<span class="op">=</span><span class="dv">3</span>):</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    numerical_data <span class="op">=</span> data.select_dtypes(include<span class="op">=</span>[np.number])</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>    categorical_data <span class="op">=</span> data.select_dtypes(exclude<span class="op">=</span>[np.number])</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    z_scores <span class="op">=</span> np.<span class="bu">abs</span>(stats.zscore(numerical_data, axis<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>    numerical_outliers <span class="op">=</span> np.<span class="bu">any</span>(z_scores <span class="op">&gt;</span> threshold, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> data[<span class="op">~</span>numerical_outliers]</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>data_without_outliers <span class="op">=</span> remove_outliers_zscore(df_review)</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data tanpa outlier:"</span>, <span class="bu">len</span>(data_without_outliers))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Data tanpa outlier: 1099</code></pre>
+</div>
+</div>
+</section>
+<section id="merubah-tipe-data-kategorial-ke-numerik" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="merubah-tipe-data-kategorial-ke-numerik"><span class="header-section-number">4.3</span> Merubah tipe data Kategorial ke Numerik</h2>
+<ol type="1">
+<li>Mengubah Tipe Data Kategorial ke Numerik: Menggunakan LabelEncoder untuk mengonversi nilai-nilai kategorial menjadi representasi numerik. Contoh: ’quarter’→[0,1,2,…]</li>
+<li>Ekstraksi Informasi Waktu dari Kolom Tanggal: Mengubah kolom ‘date’ menjadi tipe data datetime. Mengekstrak informasi waktu seperti bulan (‘month’), hari dalam bulan (‘dayNum’), dan tahun (‘year’) menggunakan atribut dt dari tipe data datetime. Menghapus kolom ‘date’ karena informasi waktu sudah diekstrak. Mengatur urutan kolom dengan memindahkan kolom waktu ke depan.</li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044850060,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:901,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenMis.csv"</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>label_encoder <span class="op">=</span> LabelEncoder()</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'quarter'</span>] <span class="op">=</span> label_encoder.fit_transform(data[<span class="st">'quarter'</span>])</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'department'</span>] <span class="op">=</span> label_encoder.fit_transform(data[<span class="st">'department'</span>])</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'day'</span>] <span class="op">=</span> label_encoder.fit_transform(data[<span class="st">'day'</span>])</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'team'</span>] <span class="op">=</span> label_encoder.fit_transform(data[<span class="st">'team'</span>])</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>data.to_csv(<span class="st">"garmenEnc.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044852069,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:533,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenEnc.csv"</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'date'</span>] <span class="op">=</span> pd.to_datetime(data[<span class="st">'date'</span>])</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'month'</span>] <span class="op">=</span> data[<span class="st">'date'</span>].dt.month</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'dayNum'</span>] <span class="op">=</span> data[<span class="st">'date'</span>].dt.day</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'year'</span>] <span class="op">=</span> data[<span class="st">'date'</span>].dt.year</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.drop(columns<span class="op">=</span>[<span class="st">'date'</span>])</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data[[<span class="st">'month'</span>, <span class="st">'dayNum'</span>, <span class="st">'year'</span>] <span class="op">+</span> [col <span class="cf">for</span> col <span class="kw">in</span> data <span class="cf">if</span> col <span class="kw">not</span> <span class="kw">in</span> [<span class="st">'year'</span>, <span class="st">'month'</span>, <span class="st">'dayNum'</span>]]]</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>data.to_csv(<span class="st">"garmenSpe.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="seleksi-fitur" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="seleksi-fitur"><span class="header-section-number">4.4</span> Seleksi Fitur</h2>
+<ol type="1">
+<li>Analisis Chi-Square dan Visualisasi: Data dibaca dari file “garmenSpe.csv”. Fitur-fitur dan label diinisialisasi. Objek SelectKBest diinisialisasi dengan metode skor Chi-Square untuk menghitung skor untuk semua fitur. <span class="math display">\[\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}\]</span> Di mana:</li>
+</ol>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Oi​: Frekuensi observasi</p>
+</blockquote>
+</blockquote>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Ei​: Frekuensi yang diharapkan</p>
+</blockquote>
+</blockquote>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Transformasi data fitur dilakukan dengan fit_transform. Skor Chi-Square untuk setiap fitur diambil. Visualisasi dilakukan dengan diagram batang menunjukkan skor Chi-Square untuk setiap fitur.</p>
+</blockquote>
+</blockquote>
+<ol start="2" type="1">
+<li>Seleksi dan Simpan Fitur yang Dipilih: Data dibaca kembali dari file “garmenSpe.csv”. Objek SelectKBest diinisialisasi dengan memilih 7 fitur terbaik menggunakan parameter k=7. Transformasi data fitur dilakukan dengan fit_transform. Fitur yang terpilih diambil menggunakan get_support(). DataFrame yang berisi fitur-fitur terpilih dan label disimpan ke dalam file “garmenSel.csv”.</li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044856378,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:1124,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="fcec1d20-3d25-4dce-ff82-1425d0e72f49" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenSpe.csv"</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> data.drop(columns<span class="op">=</span>[<span class="st">'Label'</span>])</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> data[<span class="st">'Label'</span>]</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>k_best <span class="op">=</span> SelectKBest(score_func<span class="op">=</span>chi2, k<span class="op">=</span><span class="st">'all'</span>)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>X_new <span class="op">=</span> k_best.fit_transform(X, y)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>selected_features <span class="op">=</span> X.columns[k_best.get_support()]</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>selected_data <span class="op">=</span> pd.DataFrame(X_new, columns<span class="op">=</span>selected_features)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>selected_data[<span class="st">'Label'</span>] <span class="op">=</span> data[<span class="st">'Label'</span>]</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> k_best.scores_</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>plt.bar(<span class="bu">range</span>(<span class="bu">len</span>(selected_features)), scores)</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>plt.xticks(<span class="bu">range</span>(<span class="bu">len</span>(selected_features)), selected_features, rotation<span class="op">=</span><span class="st">'vertical'</span>)</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Fitur'</span>)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Chi-square Score'</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Ranking Fitur dengan Chi-Square Score'</span>)</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="laporan_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044860228,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:544,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="38a43011-6127-45a0-c581-e2daf71aee3e" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenSpe.csv"</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> data.drop(columns<span class="op">=</span>[<span class="st">'Label'</span>])</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> data[<span class="st">'Label'</span>]</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>k_best <span class="op">=</span> SelectKBest(score_func<span class="op">=</span>chi2, k<span class="op">=</span><span class="dv">7</span>)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>X_new <span class="op">=</span> k_best.fit_transform(X, y)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>selected_features <span class="op">=</span> X.columns[k_best.get_support()]</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>selected_data <span class="op">=</span> data[selected_features]</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>selected_data[<span class="st">'Label'</span>] <span class="op">=</span> data[<span class="st">'Label'</span>]</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>selected_data.to_csv(<span class="st">"garmenSel.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  selected_data['Label'] = data['Label']</code></pre>
+</div>
+</div>
+</section>
+<section id="balancing" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="balancing"><span class="header-section-number">4.5</span> Balancing</h2>
+<ol type="1">
+<li>Pembacaan Data dan Pembagian Kelas: Data awal dibaca dari file “garmenSel.csv”. Data dibagi menjadi tiga kelompok berdasarkan kelas target: ‘High’, ‘Medium’, dan ‘Low’.</li>
+<li>Penyesuaian Ukuran Kelas Minoritas dengan Oversampling: Jumlah sampel dari kelas mayoritas (‘High’) diambil sebagai referensi. Kelas minoritas (‘Medium’ dan ‘Low’) dioversampling menggunakan metode resample dengan parameter replace=True untuk pengambilan sampel dengan penggantian, dan n_samples menentukan jumlah sampel yang diambil.</li>
+<li>Penggabungan Data yang Telah Disesuaikan dan Penyimpanan: Data yang telah dioversampling digabungkan menjadi satu DataFrame. DataFrame yang telah disesuaikan disimpan ke dalam file “garmenBal.csv”.</li>
+<li>Menampilkan Distribusi Kelas yang Telah Disesuaikan: Setelah proses oversampling, distribusi kelas baru dicetak untuk memastikan bahwa kelas sekarang memiliki jumlah sampel yang seimbang.</li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044868070,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:3,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenSel.csv"</span>)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>high_class <span class="op">=</span> data[data[<span class="st">'Label'</span>] <span class="op">==</span> <span class="st">'High'</span>]</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>medium_class <span class="op">=</span> data[data[<span class="st">'Label'</span>] <span class="op">==</span> <span class="st">'Medium'</span>]</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>low_class <span class="op">=</span> data[data[<span class="st">'Label'</span>] <span class="op">==</span> <span class="st">'Low'</span>]</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>n_samples <span class="op">=</span> <span class="bu">len</span>(high_class)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>medium_class_oversampled <span class="op">=</span> resample(medium_class, replace<span class="op">=</span><span class="va">True</span>, n_samples<span class="op">=</span>n_samples, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>low_class_oversampled <span class="op">=</span> resample(low_class, replace<span class="op">=</span><span class="va">True</span>, n_samples<span class="op">=</span>n_samples, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>balanced_data <span class="op">=</span> pd.concat([high_class, medium_class_oversampled, low_class_oversampled])</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>balanced_data.to_csv(<span class="st">"garmenBal.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044872176,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:6,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="9a63d08c-018a-4a4a-ea86-d3899e7acba7" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenBal.csv"</span>)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>label_counts <span class="op">=</span> data[<span class="st">'Label'</span>].value_counts()</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(label_counts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>High      798
+Medium    798
+Low       798
+Name: Label, dtype: int64</code></pre>
+</div>
+</div>
+</section>
+<section id="normalisasi" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="normalisasi"><span class="header-section-number">4.6</span> Normalisasi</h2>
+<p>Normalisasi dilakukan dengan menggunakan Minmax. Normalisasi Minmax dipilih untuk mengubah rentang nilai fitur menjadi skala yang sama. Ini penting karena beberapa algoritma pembelajaran mesin seperti K-Nearest Neighbors (KNN), Random Forest, SVM dan Neural Networks bekerja lebih baik jika semua fitur memiliki rentang nilai yang sama.</p>
+<p>Rumus Min-Max Scaling: <span class="math display">\[X_{\text{normalized}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}\]</span> &gt;&gt;Di mana:</p>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Xnormalized​: Nilai fitur yang telah dinormalisasi</p>
+</blockquote>
+</blockquote>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>X: Nilai asli fitur</p>
+</blockquote>
+</blockquote>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Xmin​: Nilai minimum fitur</p>
+</blockquote>
+</blockquote>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Xmax​: Nilai maksimum fitur</p>
+</blockquote>
+</blockquote>
+<p>Contoh Perhitungan dengan menerapkan rumus Min-Max diatas:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Hari</th>
+<th>Produktivitas</th>
+<th>Produktivitas Normalisasi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>100</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>200</td>
+<td>0.25</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>300</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>400</td>
+<td>0.75</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>500</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Langkah-Langkah Normalisasi 1. Pembacaan Data: Data awal dibaca dari file “garmenBal.csv”. 2. Pemisahan Fitur dan Label: Fitur-fitur disimpan dalam variabel X. Label disimpan dalam variabel y. 3. Normalisasi Menggunakan Min-Max Scaling: Objek MinMaxScaler diinisialisasi. Metode fit_transform() digunakan untuk mentransformasikan nilai-nilai fitur ke dalam rentang [0, 1] dengan mengurangkan nilai minimum dan membagi dengan selisih antara nilai maksimum dan minimum.</p>
+<ol start="4" type="1">
+<li>Penyimpanan Model Scaler: Model scaler (MinMaxScaler) disimpan ke dalam file ‘scaler_model.pkl’ menggunakan modul pickle. Ini memungkinkan untuk menggunakan model scaler yang sama pada data baru yang akan diprediksi.</li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044891561,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:352,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenBal.csv"</span>)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> data.drop(<span class="st">'Label'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> data[<span class="st">'Label'</span>]</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> MinMaxScaler()</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>X_normalized <span class="op">=</span> scaler.fit_transform(X)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'scaler_model.pkl'</span>, <span class="st">'wb'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    pickle.dump(scaler, <span class="bu">file</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="modelling" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Modelling</h1>
+<section id="perbandingan-metode" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="perbandingan-metode"><span class="header-section-number">5.1</span> Perbandingan Metode</h2>
+<ol type="1">
+<li>Pembacaan Data: Data dibaca dari file “garmenBal.csv”.</li>
+<li>Pemisahan Fitur dan Label: Fitur-fitur disimpan dalam variabel X. Label disimpan dalam variabel y.</li>
+<li>Pemulihan Model Scaler: Model scaler yang telah disimpan sebelumnya dibaca kembali menggunakan modul pickle.</li>
+<li>Pembagian Data dan Normalisasi: Data dibagi menjadi set pelatihan dan pengujian.</li>
+<li>Fitur-fitur dinormalisasi menggunakan model scaler yang telah dipulihkan. Inisialisasi Model Klasifikasi: Beberapa model klasifikasi diinisialisasi, termasuk Decision Tree, Random Forest, Logistic Regression, SVM, dan K-Nearest Neighbors.</li>
+<li>Pelatihan dan Evaluasi Model: Setiap model klasifikasi dilatih pada set pelatihan dan dievaluasi pada set pengujian. Akurasi dari masing-masing model dicatat. <span class="math display">\[\text{Akurasi} = \frac{\text{Jumlah Prediksi Benar}}{\text{Total Jumlah Prediksi}}\]</span></li>
+<li>Identifikasi Metode Terbaik: Model dengan akurasi tertinggi diidentifikasi sebagai metode terbaik.</li>
+<li>Visualisasi Perbandingan Akurasi: Sebuah diagram batang menunjukkan perbandingan akurasi dari berbagai metode klasifikasi.</li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044896243,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:1013,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="270f5fe1-4644-4e48-f7f2-5608caafeb80" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenBal.csv"</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> data.drop(columns<span class="op">=</span>[<span class="st">'Label'</span>])</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> data[<span class="st">'Label'</span>]</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"scaler_model.pkl"</span>, <span class="st">"rb"</span>) <span class="im">as</span> scaler_file:</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> pickle.load(scaler_file)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>X_scaled <span class="op">=</span> scaler.transform(X)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X_scaled, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>models <span class="op">=</span> {</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Decision Tree'</span>: DecisionTreeClassifier(),</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Random Forest'</span>: RandomForestClassifier(),</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Logistic Regression'</span>: LogisticRegression(),</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'SVM'</span>: SVC(),</span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'K-Nearest Neighbors'</span>: KNeighborsClassifier()</span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a>accuracies <span class="op">=</span> {}</span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> model_name, model <span class="kw">in</span> models.items():</span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a>    model.fit(X_train, y_train)</span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> model.predict(X_test)</span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a>    accuracy <span class="op">=</span> accuracy_score(y_test, y_pred)</span>
+<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a>    accuracies[model_name] <span class="op">=</span> accuracy</span>
+<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a>best_model <span class="op">=</span> <span class="bu">max</span>(accuracies, key<span class="op">=</span>accuracies.get)</span>
+<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Metode Terbaik: </span><span class="sc">{</span>best_model<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Akurasi Terbaik: </span><span class="sc">{</span>accuracies[best_model]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a>plt.bar(accuracies.keys(), accuracies.values())</span>
+<span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Metode Klasifikasi'</span>)</span>
+<span id="cb34-33"><a href="#cb34-33" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Akurasi'</span>)</span>
+<span id="cb34-34"><a href="#cb34-34" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Perbandingan Akurasi Berbagai Metode Klasifikasi'</span>)</span>
+<span id="cb34-35"><a href="#cb34-35" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Metode Terbaik: Random Forest
+Akurasi Terbaik: 0.9561586638830898</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="laporan_files/figure-html/cell-23-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="modelling-1" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="modelling-1"><span class="header-section-number">5.2</span> Modelling</h2>
+<p>Dari perbandingan hasil didapat akurasi random forest adalah yang terbaik jadi dipilihlah random forest untuk langkah modelling.</p>
+<section id="random-forest" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="random-forest"><span class="header-section-number">5.2.1</span> Random Forest</h3>
+<p>Random Forest adalah algoritma pembelajaran mesin yang digunakan untuk tugas-tugas klasifikasi dan regresi. Algoritma ini bekerja dengan cara membuat banyak pohon keputusan dan menggabungkan hasil mereka. Dengan kata lain, Random Forest membangun banyak pohon keputusan independen dan mengambil rata-rata dari prediksi mereka. Ini membantu untuk mengurangi overfitting, yang merupakan masalah umum dengan pohon keputusan tunggal.</p>
+<p>Misalkan kita memiliki dataset dengan fitur <span class="math inline">\(X_1, X_2, ..., X_n\)</span> dan target <span class="math inline">\(Y\)</span>. Untuk setiap pohon dalam hutan, kita akan:</p>
+<ol type="1">
+<li>Ambil sampel bootstrap dari data kita (yaitu, sampel dengan penggantian), yang akan digunakan untuk melatih pohon.</li>
+<li>Pada setiap node dalam pohon, pilih sejumlah fitur secara acak dan pecahkan node menggunakan fitur yang memberikan penurunan terbesar dalam impuritas (misalnya, Gini impurity atau entropy untuk tugas klasifikasi).</li>
+<li>Ulangi langkah-langkah ini sampai kita memiliki jumlah pohon yang diinginkan dalam hutan kita.</li>
+</ol>
+<p>Untuk membuat prediksi dengan Random Forest, kita hanya perlu menjalankan setiap pohon pada titik data baru dan mengambil rata-rata (untuk regresi) atau voting mayoritas (untuk klasifikasi) dari prediksi setiap pohon.</p>
+<p>Berikut adalah contoh sederhana bagaimana kita bisa menghitung prediksi menggunakan Random Forest dengan tiga pohon:</p>
+<p>Misalkan kita memiliki tiga pohon keputusan yang masing-masing memberikan prediksi sebagai berikut untuk suatu titik data:</p>
+<ul>
+<li>Pohon 1: Kelas A</li>
+<li>Pohon 2: Kelas B</li>
+<li>Pohon 3: Kelas A</li>
+</ul>
+<p>Dalam hal ini, Random Forest akan memberikan prediksi akhir “Kelas A” karena ini adalah kelas yang paling sering diprediksi oleh pohon-pohon dalam hutan.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>| Pohon | Prediksi |</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>|-------|----------|</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>| 1     | A        |</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>| 2     | B        |</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>| 3     | A        |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Prediksi akhir: A (dipilih oleh mayoritas pohon)</p>
+</section>
+<section id="contoh-penerapan" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="contoh-penerapan"><span class="header-section-number">5.2.2</span> Contoh Penerapan</h3>
+<p>Misalkan kita memiliki data produktivitas produksi garmen dengan fitur seperti jumlah karyawan, jumlah mesin, dan jam kerja, dan target kita adalah jumlah unit yang diproduksi. Kita bisa menggunakan Random Forest untuk memprediksi jumlah unit yang akan diproduksi berdasarkan fitur-fitur tersebut.</p>
+<p>Berikut adalah contoh bagaimana kita bisa melatih dan menggunakan model Random Forest:</p>
+<ol type="1">
+<li>Pertama, kita akan melatih model kita menggunakan data historis. Misalkan kita memiliki data berikut:</li>
+</ol>
+<div class="sourceCode" id="cb37"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>| Jumlah Karyawan | Jumlah Mesin | Jam Kerja | Unit Diproduksi |</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>|-----------------|--------------|-----------|-----------------|</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>| 10              | 5            | 8         | 100             |</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>| 20              | 10           | 8         | 200             |</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>| 30              | 15           | 8         | 300             |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Setelah model kita dilatih, kita bisa menggunakannya untuk memprediksi jumlah unit yang akan diproduksi berdasarkan fitur baru. Misalkan kita memiliki data baru berikut:</li>
+</ol>
+<div class="sourceCode" id="cb38"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>| Jumlah Karyawan | Jumlah Mesin | Jam Kerja |</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>|-----------------|--------------|-----------|</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>| 25              | 12           | 8         |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Model kita mungkin akan memberikan prediksi berikut:</li>
+</ol>
+<div class="sourceCode" id="cb39"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>| Jumlah Karyawan | Jumlah Mesin | Jam Kerja | Prediksi Unit Diproduksi |</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>|-----------------|--------------|-----------|--------------------------|</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>| 25              | 12           | 8         | 250                      |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dalam contoh ini, model kita memprediksi bahwa dengan 25 karyawan, 12 mesin, dan 8 jam kerja, kita akan dapat memproduksi 250 unit. Harap dicatat bahwa ini hanyalah contoh sederhana dan dalam praktiknya, model Random Forest akan melibatkan banyak pohon keputusan dan mungkin fitur yang lebih kompleks. Selain itu, penting untuk melakukan validasi silang dan penyetelan hyperparameter untuk memastikan bahwa model kita tidak overfitting dan dapat memprediksi dengan baik pada data yang belum pernah dilihat sebelumnya.</p>
+</section>
+<section id="code-modelling" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="code-modelling"><span class="header-section-number">5.2.3</span> Code Modelling</h3>
+<p><strong>Pemodelan Random Forest untuk Klasifikasi</strong></p>
+<ol type="1">
+<li><strong>Pembacaan Data:</strong>
+<ul>
+<li>Data dibaca dari file “garmenBal.csv”.</li>
+</ul></li>
+<li><strong>Pemisahan Fitur dan Label:</strong>
+<ul>
+<li>Fitur-fitur disimpan dalam variabel (X).</li>
+<li>Label disimpan dalam variabel (y).</li>
+</ul></li>
+<li><strong>Pemulihan Model Scaler:</strong>
+<ul>
+<li>Model scaler (MinMaxScaler) yang telah disimpan sebelumnya dibaca kembali.</li>
+</ul></li>
+<li><strong>Normalisasi Fitur:</strong>
+<ul>
+<li>Fitur-fitur dinormalisasi menggunakan model scaler.</li>
+</ul></li>
+<li><strong>Iterasi untuk Memilih Model Terbaik:</strong>
+<ul>
+<li>Dilakukan iterasi untuk setiap nilai (n_estimators) dari 1 hingga 100.</li>
+<li>Sebuah model Random Forest dibangun dengan jumlah pohon ((n_estimators)) tertentu.</li>
+<li>Model tersebut dilatih pada data yang dinormalisasi.</li>
+<li>Hasil prediksi dibandingkan dengan label sebenarnya untuk menghitung akurasi.</li>
+<li>Jika akurasi model saat ini lebih baik daripada yang sebelumnya terbaik, model tersebut dianggap sebagai model terbaik.</li>
+</ul></li>
+<li><strong>Penyimpanan Model Terbaik:</strong>
+<ul>
+<li>Model Random Forest dengan akurasi tertinggi selama iterasi disimpan ke dalam file ‘best_rf_model.pkl’ menggunakan modul pickle.</li>
+</ul></li>
+</ol>
+<p>Kode ini bertujuan untuk mencari model Random Forest dengan jumlah pohon terbaik yang memberikan akurasi tertinggi pada data yang telah diimbangi dan dinormalisasi. Model terbaik tersebut kemudian disimpan untuk penggunaan lebih lanjut.</p>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700042378741,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:29146,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="66c853ce-d4ee-452e-e763-6ec547a536a5" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenBal.csv"</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> data.drop(<span class="st">'Label'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> data[<span class="st">'Label'</span>]</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'scaler_model.pkl'</span>, <span class="st">'rb'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> pickle.load(<span class="bu">file</span>)</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>X_normalized <span class="op">=</span> scaler.transform(X)</span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>best_accuracy <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>best_rf_model <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n_estimators <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">101</span>):</span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a>    rf_model <span class="op">=</span> RandomForestClassifier(n_estimators<span class="op">=</span>n_estimators, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a>    rf_model.fit(X_normalized, y)</span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> rf_model.predict(X_normalized)</span>
+<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a>    accuracy <span class="op">=</span> accuracy_score(y, y_pred)</span>
+<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-22"><a href="#cb40-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> accuracy <span class="op">&gt;</span> best_accuracy:</span>
+<span id="cb40-23"><a href="#cb40-23" aria-hidden="true" tabindex="-1"></a>        best_accuracy <span class="op">=</span> accuracy</span>
+<span id="cb40-24"><a href="#cb40-24" aria-hidden="true" tabindex="-1"></a>        best_rf_model <span class="op">=</span> rf_model</span>
+<span id="cb40-25"><a href="#cb40-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-26"><a href="#cb40-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Akurasi terbaik: </span><span class="sc">{</span>best_accuracy<span class="sc">:.2%}</span><span class="ss"> dengan </span><span class="sc">{</span>best_rf_model<span class="sc">.</span>n_estimators<span class="sc">}</span><span class="ss">."</span>)</span>
+<span id="cb40-27"><a href="#cb40-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-28"><a href="#cb40-28" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'best_rf_model.pkl'</span>, <span class="st">'wb'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb40-29"><a href="#cb40-29" aria-hidden="true" tabindex="-1"></a>    pickle.dump(best_rf_model, <span class="bu">file</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Akurasi terbaik: 100.00% dengan 53.</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="implementasi" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Implementasi</h1>
+<section id="prediksi-sebelum-streamlit" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="prediksi-sebelum-streamlit"><span class="header-section-number">6.1</span> Prediksi (Sebelum Streamlit)</h2>
+<p>Sebelum dimplementasikan kedalam aplikasi streamlit kita buat prediksi melalui editor terlebih dahulu.</p>
+<p>Dalam kode tersebut, dilakukan implementasi untuk memprediksi kelas output (Label) berdasarkan masukan (input) yang diberikan oleh pengguna. Berikut adalah penjelasan langkah-langkahnya:</p>
+<ol type="1">
+<li><strong>Pembacaan Model dan Scaler:</strong>
+<ul>
+<li>Model Random Forest (<code>best_rf_model.pkl</code>) dan objek scaler (<code>scaler_model.pkl</code>) dibaca dari file menggunakan modul pickle.</li>
+</ul></li>
+<li><strong>Input dari Pengguna:</strong>
+<ul>
+<li>Pengguna diminta untuk memasukkan nilai-nilai berikut:
+<ul>
+<li>SMV (Standard Minute Value)</li>
+<li>WIP (Work in Progress)</li>
+<li>Over Time</li>
+<li>Incentive</li>
+<li>Idle Time</li>
+<li>Idle Men</li>
+<li>Number of Workers</li>
+</ul></li>
+</ul></li>
+<li><strong>Pembentukan Data Input:</strong>
+<ul>
+<li>Input pengguna disusun ke dalam bentuk dictionary <code>input_data</code>.</li>
+<li>Dictionary tersebut kemudian diubah menjadi DataFrame <code>input_df</code>.</li>
+</ul></li>
+<li><strong>Normalisasi Data Input:</strong>
+<ul>
+<li>Data input dinormalisasi menggunakan model scaler yang telah dibaca sebelumnya (<code>scaler</code>).</li>
+</ul></li>
+<li><strong>Prediksi dengan Model Random Forest:</strong>
+<ul>
+<li>Model Random Forest (<code>rf_model</code>) digunakan untuk melakukan prediksi pada data input yang telah dinormalisasi (<code>X_normalized</code>).</li>
+<li>Hasil prediksi disimpan dalam variabel <code>prediction</code>.</li>
+</ul></li>
+<li><strong>Output Hasil Prediksi:</strong>
+<ul>
+<li>Hasil prediksi ditampilkan kepada pengguna.</li>
+</ul></li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700044625995,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:35125,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="fc0cab2d-eaa0-4989-fc39-de22b551d97a" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'scaler_model.pkl'</span>, <span class="st">'rb'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> pickle.load(<span class="bu">file</span>)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'best_rf_model.pkl'</span>, <span class="st">'rb'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>    rf_model <span class="op">=</span> pickle.load(<span class="bu">file</span>)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>smv <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Masukkan SMV (Standard Minute Value): "</span>))</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>wip <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Masukkan Work in Progress (WIP): "</span>))</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>over_time <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Masukkan Over Time: "</span>))</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>incentive <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Masukkan Incentive: "</span>))</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>idle_time <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Masukkan Idle Time: "</span>))</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>idle_men <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Masukkan Idle Men: "</span>))</span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>no_of_workers <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Masukkan Number of Workers: "</span>))</span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>input_data <span class="op">=</span> {</span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'smv'</span>: smv,</span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'wip'</span>: wip,</span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'over_time'</span>: over_time,</span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">'incentive'</span>: incentive,</span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'idle_time'</span>: idle_time,</span>
+<span id="cb42-21"><a href="#cb42-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">'idle_men'</span>: idle_men,</span>
+<span id="cb42-22"><a href="#cb42-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">'no_of_workers'</span>: no_of_workers</span>
+<span id="cb42-23"><a href="#cb42-23" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb42-24"><a href="#cb42-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-25"><a href="#cb42-25" aria-hidden="true" tabindex="-1"></a>input_df <span class="op">=</span> pd.DataFrame([input_data])</span>
+<span id="cb42-26"><a href="#cb42-26" aria-hidden="true" tabindex="-1"></a>X_normalized <span class="op">=</span> scaler.transform(input_df)</span>
+<span id="cb42-27"><a href="#cb42-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-28"><a href="#cb42-28" aria-hidden="true" tabindex="-1"></a>prediction <span class="op">=</span> rf_model.predict(X_normalized)</span>
+<span id="cb42-29"><a href="#cb42-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-30"><a href="#cb42-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hasil Prediksi:"</span>, prediction[<span class="dv">0</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Masukkan SMV (Standard Minute Value): 26.2
+Masukkan Work in Progress (WIP): 1108
+Masukkan Over Time: 7080
+Masukkan Incentive: 98
+Masukkan Idle Time: 0
+Masukkan Idle Men: 0
+Masukkan Number of Workers: 58
+Hasil Prediksi: High</code></pre>
+</div>
+</div>
+</section>
+<section id="implementasi-streamlit" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="implementasi-streamlit"><span class="header-section-number">6.2</span> Implementasi Streamlit</h2>
+<p>Pada implementasi dengan menggunakan streamlit kita buat file python yang berisi code diatas dengan mengubah kode menjadi format yang sesuai dengan Streamlit, perlu membuat aplikasi Streamlit yang menampilkan formulir input untuk fitur-fitur yang diperlukan dan menampilkan hasil prediksi. Berikut kode yang sudah bisa dijalankan di streamlit:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> streamlit <span class="im">as</span> st</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pickle</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"scaler_model.pkl"</span>, <span class="st">"rb"</span>) <span class="im">as</span> scaler_file:</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> pickle.load(scaler_file)</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"best_rf_model.pkl"</span>, <span class="st">"rb"</span>) <span class="im">as</span> model_file:</span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>    rf_model <span class="op">=</span> pickle.load(model_file)</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>st.title(<span class="st">"Aplikasi Prediksi Produktivitas Karyawan"</span>)</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>st.header(<span class="st">"Masukkan Nilai Fitur"</span>)</span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a>smv <span class="op">=</span> st.number_input(<span class="st">"SMV (Nilai Menit Standar):"</span>, value<span class="op">=</span><span class="fl">0.0</span>, step<span class="op">=</span><span class="fl">0.1</span>, <span class="bu">format</span><span class="op">=</span><span class="st">"</span><span class="sc">%.1f</span><span class="st">"</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Nilai menit standar yang dialokasikan untuk tugas."</span>)</span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a>wip <span class="op">=</span> st.number_input(<span class="st">"Work in Progress (WIP):"</span>, value<span class="op">=</span><span class="dv">0</span>, step<span class="op">=</span><span class="dv">1</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Jumlah barang setengah jadi atau belum selesai dalam produksi."</span>)</span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>over_time <span class="op">=</span> st.number_input(<span class="st">"Over Time (Lembur) (dalam menit):"</span>, value<span class="op">=</span><span class="dv">0</span>, step<span class="op">=</span><span class="dv">30</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Jumlah waktu tambahan yang dihabiskan dalam produksi di atas waktu kerja reguler dalam menit."</span>)</span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a>incentive <span class="op">=</span> st.number_input(<span class="st">"Insentif (dalam BDT):"</span>, value<span class="op">=</span><span class="dv">0</span>, step<span class="op">=</span><span class="dv">100</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Jumlah insentif finansial yang diberikan sebagai motivasi untuk meningkatkan produktivitas."</span>)</span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a>idle_time <span class="op">=</span> st.number_input(<span class="st">"Waktu Tidak Efisien (dalam menit):"</span>, value<span class="op">=</span><span class="dv">0</span>, step<span class="op">=</span><span class="dv">30</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Jumlah waktu ketika produksi terhenti atau tidak efisien karena berbagai alasan."</span>)</span>
+<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a>idle_men <span class="op">=</span> st.number_input(<span class="st">"Pekerja Tidak Efisien (Jumlah Pekerja):"</span>, value<span class="op">=</span><span class="dv">0</span>, step<span class="op">=</span><span class="dv">1</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Jumlah pekerja yang menjadi tidak efisien atau tidak dapat bekerja selama produksi terhenti atau tidak efisien."</span>)</span>
+<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a>no_of_workers <span class="op">=</span> st.number_input(<span class="st">"Jumlah Pekerja:"</span>, value<span class="op">=</span><span class="dv">0</span>, step<span class="op">=</span><span class="dv">1</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Jumlah total pekerja yang bekerja selama periode produksi."</span>)</span>
+<span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-23"><a href="#cb44-23" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> st.button(<span class="st">"Prediksi Produktivitas"</span>):</span>
+<span id="cb44-24"><a href="#cb44-24" aria-hidden="true" tabindex="-1"></a>    input_data <span class="op">=</span> {</span>
+<span id="cb44-25"><a href="#cb44-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">'smv'</span>: smv,</span>
+<span id="cb44-26"><a href="#cb44-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">'wip'</span>: wip,</span>
+<span id="cb44-27"><a href="#cb44-27" aria-hidden="true" tabindex="-1"></a>        <span class="st">'over_time'</span>: over_time,</span>
+<span id="cb44-28"><a href="#cb44-28" aria-hidden="true" tabindex="-1"></a>        <span class="st">'incentive'</span>: incentive,</span>
+<span id="cb44-29"><a href="#cb44-29" aria-hidden="true" tabindex="-1"></a>        <span class="st">'idle_time'</span>: idle_time,</span>
+<span id="cb44-30"><a href="#cb44-30" aria-hidden="true" tabindex="-1"></a>        <span class="st">'idle_men'</span>: idle_men,</span>
+<span id="cb44-31"><a href="#cb44-31" aria-hidden="true" tabindex="-1"></a>        <span class="st">'no_of_workers'</span>: no_of_workers</span>
+<span id="cb44-32"><a href="#cb44-32" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb44-33"><a href="#cb44-33" aria-hidden="true" tabindex="-1"></a>    input_df <span class="op">=</span> pd.DataFrame([input_data])</span>
+<span id="cb44-34"><a href="#cb44-34" aria-hidden="true" tabindex="-1"></a>    X_normalized <span class="op">=</span> scaler.transform(input_df)</span>
+<span id="cb44-35"><a href="#cb44-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-36"><a href="#cb44-36" aria-hidden="true" tabindex="-1"></a>    prediction <span class="op">=</span> rf_model.predict(X_normalized)</span>
+<span id="cb44-37"><a href="#cb44-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-38"><a href="#cb44-38" aria-hidden="true" tabindex="-1"></a>    label_produk <span class="op">=</span> <span class="st">''</span></span>
+<span id="cb44-39"><a href="#cb44-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> prediction[<span class="dv">0</span>] <span class="op">==</span> <span class="st">'High'</span>:</span>
+<span id="cb44-40"><a href="#cb44-40" aria-hidden="true" tabindex="-1"></a>        label_produk <span class="op">=</span> <span class="st">'Tinggi'</span></span>
+<span id="cb44-41"><a href="#cb44-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> prediction[<span class="dv">0</span>] <span class="op">==</span> <span class="st">'Medium'</span>:</span>
+<span id="cb44-42"><a href="#cb44-42" aria-hidden="true" tabindex="-1"></a>        label_produk <span class="op">=</span> <span class="st">'Sedang'</span></span>
+<span id="cb44-43"><a href="#cb44-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> prediction[<span class="dv">0</span>] <span class="op">==</span> <span class="st">'Low'</span>:</span>
+<span id="cb44-44"><a href="#cb44-44" aria-hidden="true" tabindex="-1"></a>        label_produk <span class="op">=</span> <span class="st">'Rendah'</span></span>
+<span id="cb44-45"><a href="#cb44-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-46"><a href="#cb44-46" aria-hidden="true" tabindex="-1"></a>    st.write(<span class="ss">f"Hasil Prediksi Produktivitas: </span><span class="sc">{</span>label_produk<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb44-47"><a href="#cb44-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-48"><a href="#cb44-48" aria-hidden="true" tabindex="-1"></a>st.subheader(<span class="st">"Grafik Input Pengguna"</span>)</span>
+<span id="cb44-49"><a href="#cb44-49" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({<span class="st">'Fitur'</span>: [<span class="st">'SMV'</span>, <span class="st">'WIP'</span>, <span class="st">'Over Time'</span>, <span class="st">'Insentif'</span>, <span class="st">'Waktu Tidak Efisien'</span>, <span class="st">'Pekerja Tidak Efisien'</span>, <span class="st">'Jumlah Pekerja'</span>],</span>
+<span id="cb44-50"><a href="#cb44-50" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'Nilai'</span>: [smv, wip, over_time, incentive, idle_time, idle_men, no_of_workers]})</span>
+<span id="cb44-51"><a href="#cb44-51" aria-hidden="true" tabindex="-1"></a>st.bar_chart(data.set_index(<span class="st">'Fitur'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Dalam kode di atas, kita menggunakan Streamlit untuk membuat formulir input dengan elemen-elemen input numerik. Saat tombol “Predict” ditekan, nilai-nilai input diambil, diubah menjadi DataFrame, dinormalisasi menggunakan model scaler, dan kemudian digunakan untuk melakukan prediksi dengan model Random Forest. Hasil prediksi kemudian ditampilkan kepada pengguna.</p>
+</section>
+<section id="tampilan-strealit" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="tampilan-strealit"><span class="header-section-number">6.3</span> Tampilan Strealit</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="data:image/png;base64,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.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Cuplikan layar 2023-11-15 173532.png</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="evaluasi" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Evaluasi</h1>
+<ol type="1">
+<li><strong>Akurasi (Accuracy):</strong>
+<ul>
+<li><strong>Formula:</strong> <span class="math display">\[\text{Accuracy} = \frac{\text{True Positive} + \text{True Negative}}{\text{Total Data}}\]</span></li>
+<li><strong>Deskripsi:</strong> Akurasi mengukur sejauh mana model dapat mengklasifikasikan data dengan benar. Akurasi dinyatakan sebagai persentase dari total prediksi yang benar.</li>
+</ul></li>
+<li><strong>Recall (Sensitivitas atau True Positive Rate):</strong>
+<ul>
+<li><strong>Formula:</strong> <span class="math display">\[\text{Recall} = \frac{\text{True Positive}}{\text{True Positive} + \text{False Negative}}\]</span></li>
+<li><strong>Deskripsi:</strong> Recall mengukur sejauh mana model dapat mengidentifikasi semua instance yang benar positif dari kelas tertentu. Recall berguna ketika menghindari false negatives sangat penting.</li>
+</ul></li>
+<li><strong>Precision:</strong>
+<ul>
+<li><strong>Formula:</strong> <span class="math display">\[\text{Precision} = \frac{\text{True Positive}}{\text{True Positive} + \text{False Positive}}\]</span></li>
+<li><strong>Deskripsi:</strong> Precision mengukur sejauh mana prediksi positif model yang benar-benar benar. Precision berguna ketika menghindari false positives sangat penting.</li>
+</ul></li>
+<li><strong>F1 Score:</strong>
+<ul>
+<li><strong>Formula:</strong> <span class="math display">\[\text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}\]</span></li>
+<li><strong>Deskripsi:</strong> F1 Score adalah harmonic mean dari precision dan recall. Ini memberikan keseimbangan antara precision dan recall. F1 Score tinggi menunjukkan keseimbangan yang baik antara precision dan recall.</li>
+</ul></li>
+<li><strong>Classification Report:</strong>
+<ul>
+<li>Menyajikan statistik klasifikasi seperti precision, recall, dan f1-score untuk setiap kelas.</li>
+<li>Dalam classification report, Anda akan mendapatkan informasi ini untuk setiap kelas (High, Medium, dan Low).</li>
+</ul></li>
+</ol>
+<div class="cell" data-executioninfo="{&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1700042572609,&quot;user_tz&quot;:-420,&quot;elapsed&quot;:371,&quot;user&quot;:{&quot;displayName&quot;:&quot;21-003_ Raihan Fadillah&quot;,&quot;userId&quot;:&quot;14350617505428577453&quot;}}" data-outputid="318f9302-2d00-4bf2-c0e8-3b885e183983" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"garmenBal.csv"</span>)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> data.drop(<span class="st">'Label'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> data[<span class="st">'Label'</span>]</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'scaler_model.pkl'</span>, <span class="st">'rb'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> pickle.load(<span class="bu">file</span>)</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>X_normalized <span class="op">=</span> scaler.transform(X)</span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'best_rf_model.pkl'</span>, <span class="st">'rb'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>    best_rf_model <span class="op">=</span> pickle.load(<span class="bu">file</span>)</span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X_normalized, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> best_rf_model.predict(X_test)</span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> accuracy_score(y_test, y_pred)</span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a>recall <span class="op">=</span> recall_score(y_test, y_pred, average<span class="op">=</span><span class="st">'weighted'</span>)</span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>precision <span class="op">=</span> precision_score(y_test, y_pred, average<span class="op">=</span><span class="st">'weighted'</span>)</span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>f1 <span class="op">=</span> f1_score(y_test, y_pred, average<span class="op">=</span><span class="st">'weighted'</span>)</span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Akurasi: </span><span class="sc">{</span>accuracy<span class="sc">:.2%}</span><span class="ss">'</span>)</span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Recall: </span><span class="sc">{</span>recall<span class="sc">:.2%}</span><span class="ss">'</span>)</span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Precision: </span><span class="sc">{</span>precision<span class="sc">:.2%}</span><span class="ss">'</span>)</span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'F1 Score: </span><span class="sc">{</span>f1<span class="sc">:.2%}</span><span class="ss">'</span>)</span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'</span><span class="ch">\n</span><span class="st">Classification Report:'</span>)</span>
+<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test, y_pred))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Akurasi: 100.00%
+Recall: 100.00%
+Precision: 100.00%
+F1 Score: 100.00%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        High       1.00      1.00      1.00       165
+         Low       1.00      1.00      1.00       150
+      Medium       1.00      1.00      1.00       164
+
+    accuracy                           1.00       479
+   macro avg       1.00      1.00      1.00       479
+weighted avg       1.00      1.00      1.00       479
+</code></pre>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
